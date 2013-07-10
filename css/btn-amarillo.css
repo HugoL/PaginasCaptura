@@ -1,0 +1,15 @@
+input[type="submit"]{
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #ffe58d;
+  *background-color: #ff8d00;
+  background-image: -moz-linear-gradient(top, #ffe58d, #ff8d00);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffe58d), to(#ff8d00));
+  background-image: -webkit-linear-gradient(top, #ffe58d, #ff8d00);
+  background-image: -o-linear-gradient(top, #ffe58d, #ff8d00);
+  background-image: linear-gradient(to bottom, #ffe58d, #ff8d00);
+  background-repeat: repeat-x;
+  border-color: #d57d88 #d57d88 #ad6704;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d57d88', endColorstr='#d57d88', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
