@@ -55,28 +55,17 @@ if(!isset($current_user->ID) || $current_user->ID==0){
         }
 
       } ?>
-	    <div>Crea una nueva página seleccionando el tipo de página y pinchando en "Crear página"</div>
-      <div class="clearfix">&nbsp;</div>
+	   
 	</div>
 	<div class="clearfix"><p>&nbsp;</p></div>
+
 <div class="span11">
-  <form id="tipoPaginaForm" name="tipoPaginaForm" method="post" action="../controller/controllerPaUsuario.php">
-  <fieldset>
   <div class="well well-large">
-  <div class="control-group">
-    <div class="controls">      
-       	<label class="radio">
-  			<input type="radio" name="optionPagina" id="captura" value="captura" checked>Página de captura</label>
-		<label class="radio">
-  			<input type="radio" name="optionPagina" id="ventas" value="ventas">Página de ventas
-		</label>
-    </div>
-    <div class="clearfix">&nbsp;</div>
-    <div class="controls">
-  		<input type="submit" class="btn btn-danger btn-large" value="Crear página" />
-  	</div>
-  </div><!-- control-group -->  
-  </form>
+    <div class="thumbnails">
+    <li class="span4"><div class="thumbnail" align="center"><a href="../controller/controllerPaUsuario.php?t=1"><img src="../img/mini1.png" alt="captura"></a><div class="caption"><h4><a href="../controller/controllerPaUsuario.php?t=1" class="btn btn-primary btn-block">Página de Captura</a></h4></div></div></li>
+    <li class="span4"><div class="thumbnail" align="center"><a href="../controller/controllerPaUsuario.php?t=2"><img src="../img/mini2.png" alt="captura"></a><div class="caption"></a><h4><a href="../controller/controllerPaUsuario.php?t=2" class="btn btn-primary btn-block">Página de Ventas</a></h4></div></div></li>
+    <li class="span4"><div class="thumbnail" align="center"><a href="../controller/controllerPaUsuario.php?t=3"><img src="../img/mini3.png" alt="captura"></a><div class="caption"><h4><a href="../controller/controllerPaUsuario.php?t=3" class="btn btn-primary btn-block">Página de Captura 2</a></h4></div></div></li>
+  </div><!-- thumbnails -->
 </div><!-- well -->
 <div class="span11">
   <div><h4>Páginas creadas:</h4></div>
