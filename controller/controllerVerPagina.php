@@ -16,15 +16,19 @@ if(!isset($_GET["id"]) || !isset($_GET["tip"])){
 }
 $id = $_GET["id"];
 
-if($_GET["tip"] == "1"){
-	header("Location: ../vistas/verPaginaCap.php?id=".$id);
-	exit();
+switch ($_GET["tip"]) {
+	case '1':
+		header("Location: ../vistas/verPaginaCap.php?id=".$id);
+		break;
+	case '2':
+		header("Location: ../vistas/verPaginaVen.php?id=".$id);
+		break;
+	case '3':
+		header("Location: ../vistas/verPaginaCaptura.php?id=".$id);
+		break;
+	default:
+		header("Location: ../vistas/incorrecto.php");
+		break;
 }
-if($_GET["tip"] == "2"){
-	header("Location: ../vistas/verPaginaVen.php?id=".$id);
-	exit();
-}
-
-header("Location: ../vistas/incorrecto.php");
 
 ?>

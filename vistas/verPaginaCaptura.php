@@ -38,6 +38,7 @@ $estilo = dameEstilos($idPagina);
   <div class="titulos">
     <center><div class="pretitulo"><?php echo stripslashes($pagina["pretitulo"]); ?></div></center>
       <div class="titulo"><?php echo stripslashes($pagina["titulo"]); ?></div>
+      <center><div class="pretitulo"><?php echo stripslashes($pagina["subtitulo"]); ?></div></center>
   </div><!-- /titulo -->   
 
   <center><div class="video2"><?php echo stripslashes($pagina["cod_video"]); ?><p>&nbsp;</p></div></center>

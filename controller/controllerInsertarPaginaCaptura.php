@@ -28,12 +28,9 @@ $estilo = "form-basico";
 $accion = "";
 
 $titulo = $_POST["txttitulo"];
-if(isset($_POST["txtsubtitulo"])){
-	$subtitulo = $_POST["txtsubtitulo"];
-}
-if(isset($_POST["txtpretitulo"])){
-	$pretitulo = $_POST["txtpretitulo"];
-}
+$subtitulo = $_POST["txtsubtitulo"];
+$pretitulo = $_POST["txtpretitulo"];
+
 if(isset($_POST["txtcodigovideo"])){
 	$codigoVideo = $_POST["txtcodigovideo"];
 }
