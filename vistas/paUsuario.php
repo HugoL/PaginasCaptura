@@ -87,7 +87,13 @@ if(!isset($current_user->ID) || $current_user->ID==0){
         echo "<td>".strip_tags($pagina["titulo"])."</td>";
         echo "<td>".dameTextoTipo($pagina["id_tipo_pagina"])."</td>";        
         echo "<td><a href=\"../controller/controllerVerPagina.php?id=".$pagina["id"]."&tip=".$pagina["id_tipo_pagina"]."\" target=\"_blank\" class=\"btn btn-success\"><em class=\"icon icon-eye-open icon-white\"></em></a></td>";
-        echo "<td><a href=\"../vistas/editarPaginaCap.php?id=".$pagina["id"]."\" class=\"btn btn-primary\"><em class=\"icon icon-edit icon-white\"></em></a></td>";
+        echo "<td>";
+          if($pagina["id_tipo_pagina"] != 3){ 
+            echo "<a href=\"../vistas/editarPaginaCap.php?id=".$pagina["id"]."\" class=\"btn btn-primary\"><em class=\"icon icon-edit icon-white\"></em></a>";
+          }else{
+            echo "<a href=\"../vistas/editarPaginaCaptura.php?id=".$pagina["id"]."\" class=\"btn btn-primary\"><em class=\"icon icon-edit icon-white\"></em></a>";
+          }
+        echo "</td>";
         echo "<td><a href=\"javascript:confirmar(".$pagina["id"].")\" class=\"btn btn-danger\"><em class=\"icon icon-remove icon-white\" ></em></a></td>";
         echo "</tr>";
       }
