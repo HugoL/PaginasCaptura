@@ -15,7 +15,8 @@ switch ($_GET["t"]) {
     header("Location:../vistas/paPaginaCap.php");
     break;
   case '2':
-    header("Location:../vistas/paPaginaVid.php");
+    //header("Location:../vistas/paPaginaVid.php");
+  header("Location:../vistas/paPaginaCap.php?f=1");
     break;
   case '3':
     header("Location:../vistas/paPaginaCaptura.php");
