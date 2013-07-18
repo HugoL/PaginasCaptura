@@ -177,9 +177,9 @@ function validar(){
     <div class="clearfix">&nbsp;</div>
     <div class="controls">             
       <label>Estilo del formulario:</label>
-      <select name="selestilo" id="selestilo" class="span2" disabled>
-        <option value="form-basico">Formulario sencillo</option>
-        <option value="form-flecha" <?php if($_GET["f"] == '1'){ echo "checked='checked'"; } ?> >Formulario con flecha</option>
+      <select name="selestilo" id="selestilo" class="span4">
+        <option value="form-basico" <?php if($_GET["f"] == '1'){ echo "disabled"; } ?>>Formulario sencillo</option>
+        <option value="form-flecha"  <?php if($_GET["f"] != '1'){ echo "disabled"; } ?> >Formulario con flecha</option>
       </select>  
     </div>
     <div class="clearfix">&nbsp;</div>
