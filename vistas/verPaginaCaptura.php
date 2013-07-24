@@ -37,7 +37,7 @@ $estilo = dameEstilos($idPagina);
   <div id="contenido_ventas">
   <div class="titulos">
     <center><div class="pretitulo"><?php echo stripslashes($pagina["pretitulo"]); ?></div></center>
-      <div class="titulo"><?php echo stripslashes($pagina["titulo"]); ?></div>
+      <div class="titulo"><center><?php echo stripslashes($pagina["titulo"]); ?></center></div>
       <center><div class="pretitulo"><?php echo stripslashes($pagina["subtitulo"]); ?></div></center>
   </div><!-- /titulo -->   
 
